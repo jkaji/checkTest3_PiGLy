@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid gray;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: pink;
+    margin:0;
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.goal-btn,
+.logout-btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size:14px;
+    white-space: nowrap;
+}
+
+.goal-btn {
+    background-color: lightgray;
+    color: #000;
+}
+
+.logout-btn {
+    background-color: lightgray;
+    color: #000;
+    margin-left: 10px;
+}
