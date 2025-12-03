@@ -41,9 +41,9 @@
                 <th>最新体重</th>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{{$hd->target_weight}} kg</td>
+                <td>{{$hd->target_weight - $hd->weight}} kg</td>
+                <td>{{$hd->weight}} kg</td>
             </tr>
         </table>
     </div>
