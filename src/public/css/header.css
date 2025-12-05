@@ -6,6 +6,9 @@
     background-color: #fff;
     padding: 10px 20px;
     border-bottom: 1px solid gray;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .header__logo {

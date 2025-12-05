@@ -5,7 +5,7 @@
 @endsection
 
 <style>
-  th {
+  /* th {
     background-color: #289ADC;
     color: white;
     padding: 5px 40px;
@@ -19,7 +19,7 @@
     padding: 25px 40px;
     background-color: #EEEEEE;
     text-align: center;
-  }
+  } */
 
   svg.w-5.h-5 {
     /*paginateメソッドの矢印の大きさ調整のために追加*/
@@ -29,6 +29,8 @@
 </style>
 
 @section('content')
+
+<div class = "content">
 
 <form action = "/weight_logs" method = "get">
     @csrf
@@ -48,12 +50,28 @@
         </table>
     </div>
 
-    <div class = "table__buttons">
-        <a class = "search-btn" href = "/weight/logs/search">検索</a>
-        <button class = "add-btn" type = "submit">データ追加</button>
-    </div>
-
     <div class = "table__content">
+      <div class = "table__content--buttons">
+        
+        <div class = "buttons__search">
+          <div class="date-container">
+            <div class="date-field">
+              <label for="start-date">🗓️ </label>
+              <input type="date" id="start-date" name="start-date">
+            </div>
+            <span> ～ </span>
+            <div class="date-field">
+              <label for="end-date">🗓️ </label>
+              <input type="date" id="end-date" name="end-date">
+            </div>
+          </div>
+          <a class = "search-btn" href = "/weight/logs/search">検索</a>
+        </div>
+
+        <button class = "add-btn" type = "submit">データ追加</button>
+      </div>
+
+      <div class = "table__content--logs">
         <table>
             <tr>
                 <th>日付</th>
@@ -70,6 +88,9 @@
             </tr>
             @endforeach
         </table>
+      </div>
     </div>
 
 </form>
+
+</div>

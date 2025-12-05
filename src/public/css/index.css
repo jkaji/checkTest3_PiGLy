@@ -1,0 +1,112 @@
+.content {
+    padding-top: 90px;
+    background-color: lightgray;
+}
+
+.table__heading {
+    width: 65%;
+    background-color: #fff;
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table__heading table {
+    width: 100%;
+}
+
+.table__heading th,
+.table__heading td {
+    width: 33.33%;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.table__heading th:first-child,
+.table__heading td:first-child {
+    text-align: center;
+}
+
+.table__heading th:last-child,
+.table__heading td:last-child {
+    text-align: center;
+}
+
+.table__content {
+    width: 65%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.table__content--buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.buttons__search {
+    display: flex;
+    align-items: center;
+}
+
+.date-container {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.date-field {
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    display: block;
+    width: 100px;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    text-align: center;
+    background: gray;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-btn {
+    display: block;
+    width: 150px;
+    height: 40px;
+    padding: 8px;
+    border: none ;
+    border-radius: 8px;
+    text-align: center;
+    background: linear-gradient(270deg, purple, pink);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table__content--logs table {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.table__content--logs th {
+    background-color: #289ADC;
+    color: white;
+    padding: 5px 40px;
+}
+
+.table__content--logs tr:nth-child(odd) td {
+    background-color: #FFFFFF;
+}
+
+.table__content--logs td {
+    padding: 25px 40px;
+    background-color: #EEEEEE;
+    text-align: center;
+}
