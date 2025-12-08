@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class WeightTarget extends Model
 {
     use HasFactory;
+    
+    protected $fillable = ['weight', 'target_weight'];
 }

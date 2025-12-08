@@ -12,7 +12,7 @@ class RegisterController extends Controller
 {
     public function register()
     {
-        return view('register_step1');
+        return view('auth.register_step1');
     }
 
     public function step1(RegisterRequest $request)
@@ -20,14 +20,15 @@ class RegisterController extends Controller
         $register = $request->only(['name', 'email', 'password']);
         User::create($register);
 
-        return view('register_step2');
+        return view('auth.register_step2');
     }
 
     public function step2(RegisterStep2Request $request)
     {
         $register = $request->only(['weight', 'target_weight']);
-        
-        return view('login');
+        WeightTarget::create($register);
+
+        return view('auth.login');
     }
 
     public function login(LoginRequest $request)

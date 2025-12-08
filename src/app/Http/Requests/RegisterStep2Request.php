@@ -24,20 +24,22 @@ class RegisterStep2Request extends FormRequest
     public function rules()
     {
         return [
-            'weight' => ['required', 'decimal(4,1)'],
-            'target_weight' => ['required', 'decimal(4,1)'],
+            'weight' => ['required', 'numeric', 'digits_between:1,4', 'regex:/^\d+(\.\d{1)?$/'],
+            'target_weight' => ['required', 'numeric', 'digits_between:1,4', 'regex:/^\d+(\.\d{1})?$/'],
         ];
     }
 
     public function messages()
     {
         return [
-            'weight.required' => '体重を入力してください'
-            'weight.decimal' => '数字で入力してください'
-            'weight.decimal(4,1)' => '4桁までの数字で、小数点は1桁で入力してください'
-            'target_weight.required' => '体重を入力してください'
-            'target_weight.decimal' => '数字で入力してください'
-            'target_weight.decimal(4,1)' => '4桁までの数字で、小数点は1桁で入力してください'
-        ]
+            'weight.required' => '体重を入力してください',
+            'weight.numeric' => '数字で入力してください',
+            'weight.digits_between:1,4' => '4桁までの数字で入力してください',
+            'weight.regex:/^\d+(\.\d{1}?$/' => '小数点は1桁で入力してください',
+            'target_weight.required' => '体重を入力してください',
+            'target_weight.numeric' => '数字で入力してください',
+            'target_weight.digits_between:1,4' => '4桁までの数字で入力してください',
+            'target_weight.regex:/^\d+(\.\d{1})?$/' => '小数点は1桁で入力してください',
+        ];
     }
 }

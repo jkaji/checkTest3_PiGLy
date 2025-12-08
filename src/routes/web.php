@@ -22,6 +22,7 @@ use App\Http\Controllers\WeightLogController;
 // });
 
 Route::post('/register/step1', [RegisterController::class, 'step1']);
+Route::get('/register/step1', [RegisterController::class, 'register']);
 Route::post('/register/step2', [RegisterController::class, 'step2']);
 Route::post('/login', [RegisterController::class, 'login']);
 Route::post('/weight_logs', [AuthController::class, 'index']);

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('auth.layouts.app')
 
 @section('css')
 <link rel = "stylesheet" href = "{{ asset('css/register__step2.css') }}" />
@@ -39,9 +39,9 @@
     </div>
 
 </div>
-</form>
 
 <div class = "content__button">
     <button class = "account-btn" type = "submit" >アカウント作成</button>
 </div>
+</form>
 @endsection

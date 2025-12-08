@@ -40,10 +40,10 @@
         @enderror
     </div>
 </div>
-</form>
 
 <div class = "content__button">
     <button class = "next-btn" type = "submit"> 次に進む</button>
     <a class = "mv-login-btn" href = "/login">ログインはこちら</a>
 </div>
+</form>
 @endsection

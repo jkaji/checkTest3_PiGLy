@@ -46,6 +46,12 @@
     align-items: center;
 }
 
+.group__error {
+    color: #e3342f;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
 .content__button {
     margin-top: 30px;
 }

@@ -33,10 +33,17 @@
     border: 1px solid grey;
 }
 
+.group__error {
+    color: #e3342f;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
 .content__button {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .next-btn {
@@ -51,14 +58,14 @@
     color: #fff;
     font-weight:bold;
     cursor: pointer;
-    margin-bottom: 10px;
 }
 
 .mv-login-btn {
+    display: block;
     text-decoration: underline;
-    text-align: center;
     height:40px;
     font-weight: bold;
     color: blue;
     cursor: pointer;
+    margin-top: 15px;
 }
